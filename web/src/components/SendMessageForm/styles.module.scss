@@ -1,0 +1,120 @@
+.sendMessageFormWrapper {
+  background: #1b1b1f;
+  padding: 1.5rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  .signOutButton {
+    background: transparent;
+    border: 0;
+    color: #c4c4cc;
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    cursor: pointer;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .userImage {
+      padding: 3px;
+      background: linear-gradient(100deg, #ff008e 0%, #ffcd1e 100%);
+      border-radius: 50%;
+      line-height: 0;
+
+      img {
+        width: 94px;
+        height: 94px;
+        border-radius: 50%;
+        border: 6px solid #121214;
+      }
+    }
+
+    .userName {
+      font-size: 1.5rem;
+      line-height: 30px;
+      margin-top: 1rem;
+    }
+
+    .userGithub {
+      display: flex;
+      align-items: center;
+      margin-top: 0.5rem;
+      color: #c4c4cc;
+
+      svg {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .sendMessageForm {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin-top: 3rem;
+    background: #202024;
+
+    label {
+      padding: 18px 24px;
+      font-size: 20px;
+      background: #29292e;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    textarea {
+      background: transparent;
+      border: 0;
+      padding: 1.5rem;
+      resize: none;
+      height: 160px;
+      color: #e1e1e6;
+      font-size: 1rem;
+      line-height: 1.5rem;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &::placeholder {
+        color: #8d8d99;
+      }
+    }
+
+    button {
+      background: #ff008e;
+      margin: 2rem;
+      padding: 0 2rem;
+      height: 40px;
+      border: 0;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: filter 0.2s;
+      cursor: pointer;
+      align-self: flex-end;
+
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+}
